@@ -8,12 +8,15 @@
 
     <title> Ferramenta Pomodoro </title>
     <link rel="stylesheet" href="corpomodoro.css">
-
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet'>
+    
 </head>
 
     <div class="topo">
 
     <img src="https://images-na.ssl-images-amazon.com/images/I/31nq1iY-PQL.png" height="100px">
+
+    <h1>TIMER POMODORO</h1>
 
     </div>
 
@@ -24,24 +27,36 @@
     </div>
 
     <div class="corpo">
+        
+        <div id="temporizador">
+
+            <h3 id="tempo" class="correr">Trabalhe por:</h3>
+
+            <h3 id="descanso" class="correr">Descanse por:</h3>
+
+            <div id="tra" class="balho">
+                <h2 id="minutos">25</h2>
+                <h2 class="separa">:</h2>
+                <h2 id="segundos">00</h2>
+            </div>
+
+            <div id="des" class="canso">
+                <h2 id="minuto">25</h2>
+                <h2 class="separa">:</h2>
+                <h2 id="segundo">00</h2>
+
+            </div>
+        </div>
+
+        <button class="botao" id="comeco" >Começar</button>
+        <button class="botao" id="pausar">Pausar</button>
+        <button class="botao" id="reinicio">Reiniciar</button>
 
     </div>
 
 <body>
-    <script>
+    <script src="corpomodoro.js">
 
-        let  r = Math.floor(Math.random()*255),
-             g = Math.floor(Math.random()*255),
-             b = Math.floor(Math.random()*255),
-
-             color = 'black';
-
-         if(r*0.2126+g*0.7152+b*0.722 > 127 ){
-            color = 'black';
-         }
-
-        document.body.style.backgroundColor = 'rgb('+r+','+g+','+b+')';
-        
     </script>    
 </body>
 </html>

@@ -1,6 +1,9 @@
 .topo{
 
+    display: flex;
+    color: white;
     background-color: rgb(19, 19, 19);
+    font-family: "PT Sans";
     width: 1310px;
     height: 80px;
 
@@ -15,6 +18,58 @@
 
     background-color: rgb(14, 13, 13);
     color: white;
+    font-family: "PT Sans";
     height: 510px;
     width: 1310px;
+
+    }.crono{
+
+
+
+    }.temporizado{
+        display: flex;
+    }.botao{
+
+        
+        width: 80px;
+        height: 30px;
+        justify-self: center;
+        align-self: center;
+
+    }button{
+
+        text-decoration: bold;
+        font-family: "PT Sans";
+      color: white;
+      background-color: rgb(19, 19, 19);
+      border: 0;
+      font-size: large;
+
+}button:hover{
+
+   color: rgb(255, 34, 34);
+   cursor: pointer;
+
+}a{
+
+   text-decoration: none;
+   color: grey;
+
+}a:hover{
+
+    color:rgb(255, 34, 34);
+    cursor: pointer;
+
+    }#comeco{
+
+        grid-area: 3/2/3/2;
+
+    }#pausar{
+
+        grid-area: 3/3/3/3;
+
+    }#reinicio{
+
+        grid-area: 3/4/3/4;
+
     }
